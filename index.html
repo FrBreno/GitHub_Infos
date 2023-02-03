@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Infos</title>
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script type="module" src="./scripts/icons.js"></script>
+    <script type="module" src="./scripts/main.js" defer></script>
 </head>
 <body>
     <main class="container">
-
+        <section class="home">
+            <div class="user-input">
+                <h2>GitHub Infos</h2>
+                <form>
+                    <label for="username">Insira um nome de login do GitHub:</label>
+                    <div class="input-button">
+                        <input type="text" name="username" id="username" class="username-input" placeholder="Ex.: diego3g"/>
+                        <button type="submit" id="btn-search-user"><i data-feather="search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>

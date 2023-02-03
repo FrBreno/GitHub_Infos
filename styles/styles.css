@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,27 +18,85 @@
 }
 
 body {
+    font-family: 'inter', sans-serif;
+    font-size: 15px;
+    color: white;
     width: 100%;
     min-height: 100vh;
     background: var(--first-color);
     background: linear-gradient(107deg, var(--first-color) 0%, var(--second-color) 100%);
 }
 
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
 .container {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
+    
     width: 85%;
     height: 90%;
     border-radius: 25px;
     background-color: #070d17cd;
 }
 
+.container, .user-input {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .home {
+    width: 100%;
+    height: 100%;
+}
+
+/* USER INPUT */
+.user-input {
     text-align: center;
+    width: 35%;
+}
+
+.user-input h2 {
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.user-input label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-button {
+    display: flex;
+    justify-content: center;
+}
+
+.input-button input{
+    width: 100%;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 12px 0px 0px 12px;
+
+    font-size: 14px;
+}
+
+.input-button button {
+    cursor: pointer;
+    color: var(--first-color);
+    background-color: var(--third-color);
+    width: 60px;
+    height: 35px;
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+
+}
+
+.input-button button:hover {
+    transition: 0.3s ease-in;
+    background-color: var(--fourth-color);
 }
