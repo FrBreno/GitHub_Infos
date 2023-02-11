@@ -4,14 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* text-decoration: none;
-    list-style: none; */
+    text-decoration: none;
+    list-style: none;
 }
 
 :root{
     /*Paleta de cores*/
-    --first-color:#0d192b;
-    --second-color:#0c5149;
+    --first-color:#070d17;
+    --second-color:#093e38;
     --third-color:#0a8967;
     --fourth-color:#09c184;
     --fifth-color:#07f9a2;
@@ -20,11 +20,15 @@
 body {
     font-family: 'inter', sans-serif;
     font-size: 15px;
-    color: white;
+    color: #fff;
     width: 100%;
     min-height: 100vh;
     background: var(--first-color);
     background: linear-gradient(107deg, var(--first-color) 0%, var(--second-color) 100%);
+}
+
+a{
+    color: var(--third-color);
 }
 
 input:focus {
@@ -39,8 +43,10 @@ input:focus {
     
     width: 85%;
     height: 90%;
+}
+
+.container, .infos-profile {
     border-radius: 25px;
-    background-color: #070d17cd;
 }
 
 .container, .user-input {
@@ -50,7 +56,11 @@ input:focus {
     transform: translate(-50%, -50%);
 }
 
-.home {
+.container, .user-infos header {
+    background-color: var(--first-color);
+}
+
+.home, .user-infos {
     width: 100%;
     height: 100%;
 }
@@ -59,6 +69,8 @@ input:focus {
 .user-input {
     text-align: center;
     width: 35%;
+
+    display: none;
 }
 
 .user-input h2 {
@@ -71,6 +83,7 @@ input:focus {
     margin-bottom: 10px;
 }
 
+/* INPUT BUTTON */
 .input-button {
     display: flex;
     justify-content: center;
@@ -99,4 +112,136 @@ input:focus {
 .input-button button:hover {
     transition: 0.3s ease-in;
     background-color: var(--fourth-color);
+}
+
+/* USER INFOS */
+.user-infos {
+    overflow-x: hidden;
+    padding-bottom: 23px;
+}
+
+.user-infos header{
+    position: fixed;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    border-radius: 25px 25px 0 0;
+
+}
+
+.user-infos header .input-button button{
+    height: 30px;
+    width: 40px;
+}
+
+.user-infos header .input-button input{
+    max-width: 200px;
+}
+
+.user-infos nav {
+    position: fixed;
+    height: 100%;
+    width: 196px;
+    border-radius: 25px 0 0 25px;
+    border-right: 1px solid var(--third-color);
+
+    text-align: center;
+    z-index: 2; 
+}
+
+.user-infos nav h2 {
+    font-size: 20px;
+    margin: 23px 0;
+    color: #fff;
+}
+
+.user-infos nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 532.5px;
+    height: 100%;
+}
+
+/* INFOS */
+.infos{
+    padding-top: 70px;
+    padding-left: 226px;
+    padding-right: 30px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.infos::-webkit-scrollbar {
+    display: none;
+}
+
+.user-infos header, .user-infos nav {
+    padding: 0px 30px;
+}
+
+.infos-profile {
+    overflow: hidden;
+    display: flex;
+    padding: 13px 20px;
+    background-color: var(--third-color);
+}
+
+.user-img {
+    height: 100%;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.user-img img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+
+.user-bio {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+
+.user-bio h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.github-infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.github-infos div {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.github-infos div svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+}
+
+.github-infos div p:first-of-type {
+    margin-right: 8px;
 }
