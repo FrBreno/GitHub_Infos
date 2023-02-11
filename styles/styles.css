@@ -45,7 +45,7 @@ input:focus {
     height: 90%;
 }
 
-.container, .infos-profile {
+.container, .infos-profile, .languages, .most-used-language {
     border-radius: 25px;
 }
 
@@ -189,7 +189,7 @@ input:focus {
 .infos-profile {
     overflow: hidden;
     display: flex;
-    padding: 13px 20px;
+    padding: 14px 20px;
     background-color: var(--third-color);
 }
 
@@ -244,4 +244,56 @@ input:focus {
 
 .github-infos div p:first-of-type {
     margin-right: 8px;
+}
+
+/* GRAPHIC */
+.infos-language-graphic {
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    max-height: 300px;
+    margin-top: 30px;
+}
+
+.languages, .most-used-language{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: var(--second-color);
+}
+
+.languages {
+    justify-content: space-around;
+}
+
+.languages h5 {
+    font-size: 17px;
+}
+
+.language-graphic {
+    width: 100%;
+}
+
+.most-used-language {
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;
+}
+
+.most-used-language h5 {
+    font-size: 17px;
+    margin-bottom: 14px;   
+}
+
+.most-used-language svg {
+    width: 45px;
+    height: 45px;
+}
+
+.most-used-language p {
+    margin-top: 8px;
 }

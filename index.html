@@ -7,7 +7,8 @@
     <title>GitHub Infos</title>
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
     <script src="https://unpkg.com/feather-icons"></script>
-    <script type="module" src="./scripts/icons.js"></script>
+    <script type="module" src="./scripts/utils/icons.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="module" src="./scripts/main.js" defer></script>
 </head>
 <body>
@@ -31,6 +32,7 @@
                         <button type="submit" id="btn-search-user"><i data-feather="search"></i></button>
                     </div>
                 </header>
+
                 <nav>
                     <a href="#"><h2>GitHub Infos</h2></a>
                     <ul>
@@ -53,6 +55,7 @@
 
                     </ul>
                 </nav>
+
                 <div class="infos">
                     <div class="infos-profile">
                         <div class="user-img">
@@ -95,6 +98,18 @@
                                     <p>Brasil</p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    
+                    <div class="infos-language-graphic">
+                        <div class="most-used-language">
+                            <h5>Linguagem mais utilizada</h5>
+                            <i data-feather="github">Icon</i>
+                            <p>Typescript</p>
+                        </div>
+                        <div class="languages">
+                            <h5>Linguagens mais utilizadas</h5>
+                            <div class="language-graphic"></div>
                         </div>
                     </div>
                 </div>
