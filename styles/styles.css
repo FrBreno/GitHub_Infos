@@ -120,12 +120,14 @@ input:focus {
 
 /* USER INFOS */
 .user-infos {
+    padding-top: 70px;
     overflow-x: hidden;
     padding-bottom: 23px;
 }
 
 .user-infos header{
     position: fixed;
+    top: 0;
     display: flex;
     justify-content:end;
     align-items: center;
@@ -147,11 +149,12 @@ input:focus {
 
 .user-infos nav {
     position: fixed;
+    top: 0;
     height: 100%;
     width: 196px;
     border-radius: 25px 0 0 25px;
     border-right: 1px solid var(--third-color);
-
+    
     text-align: center;
     z-index: 2; 
 }
@@ -165,15 +168,36 @@ input:focus {
 .user-infos nav ul{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    align-items: left;
+    padding-top: 15px;
     max-height: 532.5px;
     height: 100%;
 }
 
+.user-infos nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 14px 28px;
+    margin: 1px 10px;
+    border-radius: 12px;
+}
+
+.user-infos nav ul li a:hover, .active {
+    cursor: pointer;
+    background-color: var(--third-color);
+    transition: 0.3s ease-in;
+    color: #fff;
+}
+
+.user-infos nav ul li a svg {
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+}
+
 /* INFOS */
 .infos{
-    padding-top: 85px;
+    padding-top: 15px;
     padding-left: 226px;
     padding-right: 30px;
     width: 100%;
@@ -186,7 +210,7 @@ input:focus {
     display: none;
 }
 
-.user-infos header, .user-infos nav {
+.user-infos header {
     padding: 0px 30px;
 }
 
