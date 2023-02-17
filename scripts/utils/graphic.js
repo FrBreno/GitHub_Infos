@@ -1,4 +1,4 @@
-export function graphic() {
+export default function graphic() {
     google.charts.load('current', {'packages':['corechart'], 'language': 'pt-br'});
     google.charts.setOnLoadCallback(drawChart);
     
