@@ -73,8 +73,6 @@ input:focus {
 .user-input {
     text-align: center;
     width: 35%;
-
-    display: none;
 }
 
 .user-input h2 {
@@ -123,8 +121,7 @@ input:focus {
     padding-top: 70px;
     overflow-x: hidden;
     padding-bottom: 23px;
-
-    /* display: none; */
+    display: none;
 }
 
 .user-infos header{
