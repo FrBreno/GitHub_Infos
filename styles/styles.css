@@ -155,7 +155,7 @@ input:focus {
     height: 100%;
     width: 196px;
     border-radius: 25px 0 0 25px;
-    border-right: 1px solid var(--third-color);
+    border-right: 1px solid var(--second-color);
     
     text-align: center;
     z-index: 2; 
@@ -383,6 +383,18 @@ input:focus {
     border: none;
     font-size: 15px;
     cursor: pointer;
+}
+
+.more-repositories-link, .infos-profile, .most-used-language, .languages, .repositories, .repository {
+    transition: transform 0.2s ease;
+}
+
+.more-repositories-link:active, .infos-profile:active , .most-used-language:active, .languages:active {
+    transform: scale(0.96);
+}
+
+.repository:active {
+    transform: scale(0.98);
 }
 
 /* BOX SHADOW */
