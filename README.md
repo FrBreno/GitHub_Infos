@@ -47,22 +47,22 @@ Obter dados de usuários por meio da API pública do GitHub a partir de seus nom
 &nbsp;
 
 <div>
-    <img height="650em" src="https://user-images.githubusercontent.com/91495296/221032220-79e7f9cf-9669-4a31-93eb-83bcb0ab52a1.jpg">
+    <img height="600em" src="https://user-images.githubusercontent.com/91495296/221032220-79e7f9cf-9669-4a31-93eb-83bcb0ab52a1.jpg">
 </div>  
 &nbsp;
 
 <div>
-    <img height="650em" src="https://user-images.githubusercontent.com/91495296/221032217-b4633aaf-1bbd-4185-b016-bbc99f165ce7.jpg">
+    <img height="600em" src="https://user-images.githubusercontent.com/91495296/221032217-b4633aaf-1bbd-4185-b016-bbc99f165ce7.jpg">
 </div>
 &nbsp;
 
 <div>
-    <img height="650em" src="https://user-images.githubusercontent.com/91495296/221032208-8f4a8f25-744e-4bc8-aace-232eec9c3f50.jpg">
+    <img height="600em" src="https://user-images.githubusercontent.com/91495296/221032208-8f4a8f25-744e-4bc8-aace-232eec9c3f50.jpg">
 </div>
 &nbsp;
 
 <div>
-    <img height="650em" src="https://user-images.githubusercontent.com/91495296/221032221-b605d4ee-9d74-4ba3-9800-419fa5863c49.jpg">
+    <img height="600em" src="https://user-images.githubusercontent.com/91495296/221032221-b605d4ee-9d74-4ba3-9800-419fa5863c49.jpg">
 </div>
 
 ---
